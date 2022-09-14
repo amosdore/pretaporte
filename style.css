@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.logo img{
+    width: 30px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #555;
+}
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col-2{
+    flex-basis: 50%;
+   min-width: 300px;
+}
+.col-2 Img{
+    width: 100%;
+    padding: 30px 0;
+}
+.col-2 h1{
+    font-size: 40px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+
+.col-2 p{
+    color: #555;
+    font-size: 30px;
+}
+.entete-section{
+    margin-top: -20px;
+    /* background: #e29c04; */
+}
+/* style de la section categorie */
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    margin: auto;
+    min-width: 250px;
+}
+.col-3 img{
+    width: 100%;
+}
+.container h2{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #444;
+    margin: 50px 0;
+}
+/* style section des meilleur produits */
+
+.col-4{
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 15px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.col-4:hover{
+    transform: translateY(-10px);
+}
+.col-4 img{
+    width: 100%;
+    height: 100%;
+}
+
+.rating .fa {
+    color: #106e77;
+}
+
+
+/* style du footer */
+
+.footer{
+    
+    background: #000;
+    color: #8a8a8a;
+    margin: 70px 0 -20px;
+    padding: 40px 0;
+}
+
+.sponsor h3{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.footer-col-4{
+    display: flex;
+   justify-content: space-between;
+    margin-top: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.footer-col-4 img{
+    width: 40px;
+    justify-self: center;
+    
+}
+.orange{
+   text-align: center;
+}
+.cellcom{
+   text-align: center;
+}
+.areeba{
+   text-align: center;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 40px;
+}
+.copy-right hr{
+   border: none;
+   height: 1px;
+   background: #fff;
+   text-align: center;
+}
+
+.col-5-disign h2{
+    
+      font-size: 50px;
+      font-weight: bold;
+      color: #000;
+      text-align: left;
+      border-bottom: solid 1px#106e77;
+}
+.col-5-disign h3{
+      font-size: 30px;
+      color: #555;
+      padding-bottom: 15px; 
+         
+}
+
+
+
+/* media query style */
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #000;
+        width: 100%;
+        padding: 10px 0;
+        transition: max-height 0.5s, padding 0.5s;
+       
+    }
+
+    nav ul{
+        display: inline-block;
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        margin-left: 15px;
+        display: inline-block;
+    }
+
+    .logo img:hover{
+        cursor: pointer;
+    }
+    
+}
+
+
+/* mediaquery pour les screens inferieurs a 600px */
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-1, .col-2, .col-3, .col-4, .col-5{
+        flex-basis: 100%;
+    }
+
+    div.col-2{
+        padding: 5px;
+       text-align: left; 
+    }
+   
+    .entete-section{
+        margin-bottom: -70px;
+    }
+
+    .footer-col-4 h3{
+        font-size: 12px;
+    }
+    
+}

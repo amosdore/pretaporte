@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet01</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="entete-section">
+        <div class="container">
+            <header class="navbar">
+                <div class="logo">
+                    <img src="images/menu.png" alt="menu" width="30px" class="menu-icon" onclick="toogleButton()">
+                </div>
+                <nav>
+                    <ul id="menu_icone">
+                        <li><a href="index.html">Acceuil</a></li>
+                        <li><a href="T-Shirt.html">Nos T-Shirts</a></li>
+                        <li><a href="Chemise.html">Nos Chemises</a></li>
+                        <li><a href="Mandela.html">Mandela </a></li>
+                        <li><a href="Veste.html">Vestes</a></li>
+                    </ul>
+                    <a href=""><img src="images/cart.png" alt="cart icon" width="35px"></a>
+                </nav>
+            </header>
+           
+        </div>
+    </section> 
+  
+    <!-- Nos Produits -->
+    <section class="produit-avance">
+        <div class="container">
+            <h2>Nos Chemises top</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/chemise.Embale 2.jpg" alt="">
+                    <h3>Chemise echantillon</h3>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>90000 gnf</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/chemise.Embale 3.jpg" alt="">
+                    <h3>Chemise</h3>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>90.000 gnf</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/chemise.Embale 4.jpg" alt="">
+                    <h3>Chemise</h3>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>90.000 gnf</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/chemise.Embale 5.jpg" alt="">
+                    <h3>Chemise </h3>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>90.000 gnf</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/chemise.Embale 6.jpg" alt="">
+                    <h3>Chemise </h3>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>90.000 gnf</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/chemise.Embale 7.jpg" alt="">
+                    <h3>Chemise </h3>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>90.000 gnf</p>
+                </div>
+            </div>
+        </div>
+    </section>  
+  
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="sponsor"><h3>Sponsors</h3></div>
+            <div class="copy-right">
+                <hr>
+            </div>
+            <div class="footer-col-4">                
+                <div class="orange">
+                    <img src="images/orange.PNG" alt="">
+                    <h3>Orange.gn.com</h3>
+                </div>
+                <div class="cellcom">
+                    <img src="images/cellcom.PNG" alt="">
+                    <h3>Cellcom.gn.com</h3>
+                </div>
+                <div class="orange">
+                    <img src="images/areeba.PNG" alt="">
+                    <h3>Areeba.gn.com</h3>
+                </div>               
+                               
+            </div>
+            <p>DoreDavid.com &copy;2022</p>
+        </div>
+
+    </footer>
+    <!-- javascript  -->
+
+    <script>
+        var menuItems = document.getElementById('menuItems');
+
+        menuItems.style.maxHeight = '0px';
+        menuItems.style.padding = '0px';
+
+        function toogleButton() {
+            if (menuItems.style.maxHeight == '0px') {
+                menuItems.style.maxHeight = '200px';
+                menuItems.style.padding = '15px';
+            } else {
+                menuItems.style.maxHeight = '0px';
+                menuItems.style.padding = '0px';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
